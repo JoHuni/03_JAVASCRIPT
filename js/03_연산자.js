@@ -43,7 +43,10 @@ function calculate(operate){
     const value2 = parseInt(num2.value);
     let calcResult;
 
-
+    if(num1.value == '' || num2.value == '') {
+        alert("값을 입력해주세요.");
+        return;
+    }
     switch(operate){
         case "+":
             calcResult = value1 + value2;
@@ -113,7 +116,7 @@ function check1(){
     // 후위 연산(count++, count--) 확인
     // -> 다른 연산이 다 끝나고 마지막에 수행 
     console.log("---------------------")
-    console.log("count++ : ", count++); /* 50 출력 후 51로 증가 */
+    console.log("count++ : ", count++); /* 50 출력 후 51로 증가  */
     console.log("count++ : ", count++);
     console.log("count++ : ", count++);
 
