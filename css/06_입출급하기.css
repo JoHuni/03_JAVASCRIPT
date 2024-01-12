@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col{
+    text-align: center;
+}
+
+#amount{
+    margin-right: 80px;
+}
+
