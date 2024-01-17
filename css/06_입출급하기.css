@@ -13,8 +13,8 @@
 
 .row{
     display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .col{
@@ -25,3 +25,11 @@
     margin-right: 80px;
 }
 
+.deposit{
+    background-color: green;
+    text-align: center;
+}
+
+.withdrawal{
+    background-color: red;
+}

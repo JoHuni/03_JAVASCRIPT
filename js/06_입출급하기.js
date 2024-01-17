@@ -29,7 +29,9 @@ function deposit() {
         return;
     }
     lBalance += bBalance
-    amount.innerHTML = "잔액 : " + lBalance;
+    amount.innerHTML = "잔액 : " + lBalance + "원";
+    alert(bBalance + '원이 입금되었습니다.');
+    balance.value = '';
 }
 
 function withdrawal(){
@@ -42,14 +44,17 @@ function withdrawal(){
     else if(password == '1234'){
         if(bBalance > lBalance){
             alert("출금 금액이 잔액보다 클 수 없습니다.");
+            balance.value = '';
         }
         else if(bBalance == 0){
             alert("0원은 출금할 수 없습니다.");
+            balance.value = '';
         }
         else{
             lBalance -= bBalance;
-            alert(bBalance + "원이 출금되었습니다. 남은 잔액 : " + lBalance);
-            amount.textContent = "잔액 : " + lBalance;
+            alert(bBalance + "원이 출금되었습니다. 남은 잔액 : " + lBalance + "원");
+            amount.textContent = "잔액 : " + lBalance + "원";
+            balance.value = '';
             return;
         }
     }
