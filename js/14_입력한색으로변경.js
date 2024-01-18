@@ -1,17 +1,10 @@
-let box3 = document.querySelectorAll('#box3');
-const input3 = document.querySelector('#input3');
+const box3 = document.querySelectorAll('#box3');
+const input3 = document.querySelectorAll('#input3');
 const btn = document.querySelector('#btn');
 
-input3.addEventListener("keydown", function(e){
-    for(let i = 0; i < box3.length; i++){
-        box3[i];
-    }
-    if(e.key == 'Enter'){
-        box3.style.backgroundColor = input3.value
-    }
-});
-
 btn.addEventListener("click", function(){
-    box3.style.backgroundColor = input3.value
+    for (let i = 0; i < input3.length; i++) {
+        const color = input3[i].value;
+        box3[i].style.backgroundColor = color;
+    }
 });
-
