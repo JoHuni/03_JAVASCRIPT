@@ -47,7 +47,7 @@ createBox.addEventListener("click", () => {
 const innerHTMLBox = document.querySelector("#innerHTMLBox");
 
 innerHTMLBox.addEventListener("click", () => {
-    /* container의 이전 내용에 
+    /* container의 이전 내용에  
         '<div class="box"></div>'을 누적 + HTML 해석
     */
     
