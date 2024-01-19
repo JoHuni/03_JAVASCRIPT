@@ -1,9 +1,9 @@
-/* * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+/*
 .container{
     width: 500px;
     margin: 50px auto;
@@ -32,36 +32,37 @@
     border: 1px solid black;
 }
 */
-#btn{
+.btn{
     width: 500px;
     font-size: 15px;
     background-color: white;
-    border: 10px solid aquamarine;
+    border: 10px solid blueviolet;
     border-radius: 10px;
-    margin-left: 350px;
+    display: block;
+    margin: auto;
 }
 
 .container3{
     width: 200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   
     display: flex;
     flex-direction: column;
     margin: 20px;
-    padding: 5px;
 }
 
-#box3{
+.box3{
     box-sizing: border-box;
     height: 200px;
     border: 1px solid black;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
-.container3 *{
-    margin-bottom: 5px;
+.input3{
+    height: 25px;
 }
 
 .color-container{
     display: flex;
+    justify-content: center;
 }
