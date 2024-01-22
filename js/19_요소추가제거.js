@@ -8,24 +8,15 @@ const bDelete = document.querySelectorAll('.bDelete');
 
 
 createInput.addEventListener("click", () => {
-    console.log(bDelete);
-    const input = document.createElement("input");
-    const button = document.createElement("button");
     const container1 = document.createElement("div");
     container1.classList.add("container1");
-    input.type = "number";
-    input.classList.add("val");
-    button.classList.add("bDelete");
-    button.innerHTML = "x"
-    // console.log(input);
-    container.appendChild(container1)
-    container1.appendChild(input);
-    container1.appendChild(button);
-    button.addEventListener("click", () => {
-    container1.remove();
+    container1.innerHTML = '<input type="number" class="val"><button class="bDelete">x</button>';
+    container.appendChild(container1);
+
+    container1.querySelector('.bDelete').addEventListener("click", () => {
+        container1.remove();
     });
 });
-
 
 btnCalc.addEventListener("click", () => {
     const iValue = document.querySelectorAll('.val');
