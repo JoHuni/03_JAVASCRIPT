@@ -63,10 +63,18 @@ resetBtn.addEventListener("click", ()=>{
     output();
     startBtn.innerText = "Start";
     running = false;
+    recordContainer.innerHTML = "";
+
 });
 
 recordBtn.addEventListener("click", ()=>{
-    const li = document.createElement("li");
-    li.innerHTML = output();
-    recordContainer.appendChild(li);
+    if(count == 0){
+        alert('0초에 기록할 수 없습니다');
+        return;
+    }
+    else{
+        const li = document.createElement("li");
+        li.innerHTML = output();
+        recordContainer.appendChild(li);
+    }
 });
