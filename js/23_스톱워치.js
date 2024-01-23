@@ -68,6 +68,7 @@ resetBtn.addEventListener("click", ()=>{
 });
 
 recordBtn.addEventListener("click", ()=>{
+    time = document.querySelectorAll("recordContainer > li");
     if(count == 0){
         alert('0초에 기록할 수 없습니다');
         return;
@@ -76,5 +77,11 @@ recordBtn.addEventListener("click", ()=>{
         const li = document.createElement("li");
         li.innerHTML = output();
         recordContainer.appendChild(li);
+        for(i = 0; i < time.length - 1; i++){
+            cur = time[i].count
+            for(j = 0; j < time.length; j++){
+                
+            }
+        }
     }
 });

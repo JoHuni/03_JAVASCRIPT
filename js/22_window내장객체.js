@@ -34,3 +34,45 @@ stop3.addEventListener("click", ()=> {
     clearInterval(curInterval);
     start3.disabled = false;
 });
+
+/* 팝업창 열기 */
+const openPopup1 = document.querySelector("#openPopup1");
+
+openPopup1.addEventListener("click", () => {
+  window.open("23_스톱워치.html");
+});
+
+/* 진짜 팝업창 열기 */
+const openPopup2 = document.querySelector("#openPopup2");
+openPopup2.addEventListener("click", () => {
+    window.open("23_스톱워치.html", "_blank", "popup");
+  });
+
+/* 팝업창 + 옵션 */
+const openPopup3 = document.querySelector("#openPopup3");
+openPopup3.addEventListener("click", () => {
+    let options = [];
+    options.push("width=400");
+    options.push("height=400");
+
+    // 팝업창 띄우는 위치를 지정
+    // 메인 모니터에서만 적용
+    options.push("left=500");
+    options.push("top=100");
+
+    window.open("23_스톱워치.html", "_blank", options.toString());
+  });
+
+const openPopup4 = document.querySelector("#openPopup4");
+openPopup4.addEventListener("click", () => {
+    const options = [];
+
+    options.push("width=300");
+    options.push("height=300");
+    options.push("left=500");
+    options.push("top=100");
+
+    window.open("22_팝업창.html", "_blank", options.toString());
+
+});
+
