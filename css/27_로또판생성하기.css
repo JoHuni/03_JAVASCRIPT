@@ -10,7 +10,7 @@
     height: 50px;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin: 20 20px;
 }
 
 .item{
@@ -19,7 +19,13 @@
     border: 1px solid black;
     border-radius: 50%;
     margin: auto;
-    margin-bottom: 20px;
     text-align: center;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    background-color: plum;
 }

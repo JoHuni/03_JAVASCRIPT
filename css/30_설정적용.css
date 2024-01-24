@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 추가된 스타일: 수평 방향 가운데 정렬 */
+
+}
+
+table{
+    border: 1px solid black;
+}
+th, td{
+    border: 1px solid black;
+}
+
+.box1{
+    width: 70%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.box1 > button{
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#inputText{
+    width: 500px;
+    padding: auto;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+.box2{
+    width: 60%;
+    height: 45%;
+    border: 1px solid black;
+    margin-top: 40px;
+    display: flex;
+}
